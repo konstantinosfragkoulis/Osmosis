@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Osmosis Simulation</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A simple simulation of Osmosis">
+    <meta name="keywords" content="osmosis, simulation, chemistry">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <h1 id="title">Osmosis Simulation</h1>
+
+    <section id="simulation1">
+        <h2>Simulation 1: Container with Semipermeable Membrane</h2>
+        <div class="inputs">
+        <div>
+            <h3>Solution A</h3>
+            <label for="C_a">Concentration (mol/L):</label>
+            <input type="number" id="C_a" step="0.01" placeholder="0.00">
+            <label for="V_a">Volume (L):</label>
+            <input type="number" id="V_a" step="0.01" placeholder="0.00">
+        </div>
+        <div>
+            <h3>Solution B</h3>
+            <label for="C_b">Concentration (mol/L):</label>
+            <input type="number" id="C_b" step="0.01" placeholder="0.00">
+            <label for="V_b">Volume (L):</label>
+            <input type="number" id="V_b" step="0.01" placeholder="0.00">
+        </div>
+        </div>
+        <button id="startSim1">Begin Simulation 1</button>
+        <div id="container1"></div>
+    </section>
+
+    <section id="simulation2">
+        <h2>Simulation 2: Tube with Movable Semipermeable Membrane</h2>
+        <div class="inputs">
+        <div>
+            <h3>Solution C</h3>
+            <label for="C_c">Concentration (mol/L):</label>
+            <input type="number" id="C_c" step="0.01" placeholder="0.00">
+            <label for="V_c">Volume (L):</label>
+            <input type="number" id="V_c" step="0.01" placeholder="0.00">
+        </div>
+        <div>
+            <h3>Solution D</h3>
+            <label for="C_d">Concentration (mol/L):</label>
+            <input type="number" id="C_d" step="0.01" placeholder="0.00">
+            <label for="V_d">Volume (L):</label>
+            <input type="number" id="V_d" step="0.01" placeholder="0.00">
+        </div>
+        <div>
+            <h3>Cylinder Properties</h3>
+            <label for="l">Length (cm):</label>
+            <input type="number" id="l" step="0.01" placeholder="0.00">
+        </div>
+        </div>
+        <button id="startSim2">Begin Simulation 2</button>
+        <div id="container2"></div>
+    </section>
+
+    <footer class="footnote">
+        <p>This simulation assumes a temperature of 25°C and uses the ideal gas constant R = 0.0821 L·atm/(K·mol)</p>
+        <p class="github-link">
+        <i class="fab fa-github"></i>
+        <a href="https://github.com/konstantinosfragkoulis/osmosis" target="_blank">View source code on GitHub</a>
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
