@@ -1,2 +1,2 @@
 # Osmosis
-A simple simulation of osmosis
+This is a simple simulation of the phenomenon of osmosis. See either how the level of water changes, or how the semipermeable membrane moves, because of a difference in the concentration of the solutions on either side of the membrane.
